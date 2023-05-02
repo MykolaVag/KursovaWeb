@@ -1,0 +1,333 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+   
+  label {             
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  input::placeholder {
+    color: black;
+  } 
+  form input { 
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 11px;
+    padding: 10px 0px 11px 0px;
+    border-radius: 11px; 
+    font-size: 16px;       
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid #ccc;  
+  }
+
+  form input:hover { 
+     background-color: #dc3545;
+  }
+
+  form button{
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 11px;
+    padding: 10px 0px 11px 0px;
+    border-radius: 11px; 
+    font-size: 16px;       
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid #ccc;  
+  }
+
+
+ 
+  form button[id="submit"] 
+    { 
+  color: black;
+  cursor: pointer;
+  padding: 10px 20px; 
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  border: 2px solid #dc3545;                               
+}  
+form button[id="submit"]:hover 
+{
+background-color: #dc3545;} 
+
+form button[id="register"]{
+  width: 250px;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 0px; 
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+  title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  body { 
+    display: flex;        
+    font-family: "Helvetica", sans-serif;                 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } 
+  header {
+    left: 0;
+    position: fixed;  
+    top: 0; 
+    width: 100px;  
+    padding: 10px;  
+  }
+  
+  header img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+  }
+  
+  img {
+    max-width: 81.1%;  
+    height: auto; 
+    object-fit: contain;  
+  }
+
+  .document label {
+    display: flex;
+    align-items: center;
+}
+
+.document input[type="checkbox"] {
+    margin-left: auto; 
+    border-width: 2px;
+    border-style: solid;
+    border-color: #525252;
+    width: 2em;
+    height: 2em;
+    display: block;
+  }
+  
+  form h2 {
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  form .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px; 
+  } 
+
+  input[id="create"], input[id="base"], input[id="exit"] {
+    border: 2px solid #dc3545; 
+  } 
+  
+.document{
+  margin-bottom: 1rem;
+  box-shadow: 10px 5px 5px black; 
+  list-style-type: none;
+}
+
+.document span.completed{
+  text-decoration: line-through;
+}
+
+.document i{
+  z-index: 2;
+}
+
+.documents { 
+  background-color: rgba(43, 45, 66, 1); 
+  height: auto;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  font-family: cursive;
+}
+
+.documents-main h1 {
+  font-size: 38px;
+}
+
+.form-choose{
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0px; 
+}
+
+ 
+
+.documents-main{ 
+  border-radius: 20px;
+  padding-bottom: 20px;
+  background-color:  white;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 5px black; 
+}
+
+.documents-main ul{ 
+  padding: 11px;
+  margin-left: 11px; 
+} 
+
+.document:hover {
+  color: red; 
+}
+
+.document label{
+  color: black;
+}
+
+.btn-choosen{ 
+  background-color: #dc3545;
+  border: 2px solid #dc3545;
+  box-shadow: 5px 5px 5px black;
+}
+
+.btn-choose{
+  border: 2px solid #dc3545; 
+  box-shadow: 5px 5px 5px black;
+} 
+
+
+
+.base_list{ 
+  padding: 15px;
+  background-color: grey;
+  display: block;
+}
+.card-body{        
+  display: flex;
+  flex-direction: column; 
+}
+.p{        
+
+  border: 2px solid #dc3545; 
+}
+.p:hover{
+
+  background-color: red;
+}
+.accordion {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;   
+  display:flex;
+}             
+
+.card {
+  margin-bottom: 10px;
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd; 
+}
+
+.card-header h5 {
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding: 10px;
+}
+.btn-choose:hover{
+  background-color: #dc3545;
+} 
+
+
+.filling {
+  background-color: rgba(43, 45, 66, 1); 
+  font-family: cursive;
+} 
+
+
+.space{
+  margin-bottom: 20px;
+}
+.next-card{
+  border: 2px solid #dc3545;
+}
+.next-card:hover{
+  background-color:  #dc3545;
+}
+
+
+.select-sex{
+  text-align: center;
+    font-family: cursive;
+    margin-bottom: 11px;
+    padding: 10px 0px 11px 0px;
+    border-radius: 11px;
+    font-size: 16px;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid #ccc; 
+}
+ 
+[type="checkbox"].filled-in:not(:checked), [type="checkbox"].filled-in:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"].filled-in:not(:checked) + span, [type="checkbox"].filled-in:checked + span {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+[type="checkbox"].filled-in:not(:checked) + span:before, [type="checkbox"].filled-in:checked + span:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid  black;
+  background-color: #fff;
+  border-radius: 5px;
+}
+ 
+[type="checkbox"].filled-in:checked + span:before {
+  content: '\2714';
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  color: black;
+} 
+.base_element{  
+  margin-top: 200px;  
+}
+.base_elements{
+  background-color: rgba(43, 45, 66, 1); 
+  font-family: cursive;
+  margin-bottom: 201px;
+}
+.coder{
+  margin-bottom: 20px;
+}
