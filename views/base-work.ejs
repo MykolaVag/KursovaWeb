@@ -1,0 +1,27 @@
+<!DOCTYPE html>                       
+<html>
+  <head> 
+    <link rel="stylesheet" type="text/css" href="./index.css">  
+    <title>Медична карта</title>
+  </head> 
+  <body class="base_elements">  
+    <form class="base_element" action=""> 
+      <h1>Медична карта</h1>    
+      <div class="coder">    
+        <p>Серія: <%= medcards.car_series %></p>
+        <p>№: <%= medcards.car_number %></p>  
+        <p>Прізвище лікаря: <%= medcards.last_name %></p>
+        <p>№ Медичної карти: <%= medcards.work_number_cart %></p> 
+        <p>Прізвище, ім'я, по-батькові: <%= medcards.last_name %></p>    
+        <p>Місце роботи: <%= medcards.work_top %></p>          
+        <p>Причина непрацездатності: <%= medcards.work_reason %></p>    
+        <p>Виданий: <%= medcards.work_issued %></p> 
+      </div>  
+      <div class="form-choose">
+        <button class="next-card" type="submit" onclick="location.href='/main'">В меню</button>   
+        <button class="btn-choosen" type="button" onclick="history.back();">Назад</button>    
+      </div> 
+    </form> 
+  </body> 
+
+  </html>

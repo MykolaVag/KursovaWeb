@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>   
+<head> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./index.css"> 
+    <title>Вхід</title>  
+</head>
+<body>          
+    <form id="my-form" method="POST" action="/login">   
+        <h2>Вхід</h2>
+        <input type="text" id="username" name="username" placeholder="Ім'я користувача" required> 
+        <input type="text" id="password" placeholder="Пароль" name="password" required> 
+        <button type="submit" id="submit">Увійти</button>
+        <button onclick="location.href='/register'" type="register" id="register">Зареєструватись</button>     
+    </form> 
+    <div id="errorMessage"></div>
+</body>
+</html>  

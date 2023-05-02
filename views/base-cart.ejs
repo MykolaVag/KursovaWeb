@@ -1,0 +1,31 @@
+<!DOCTYPE html>                       
+<html>
+  <head> 
+    <link rel="stylesheet" type="text/css" href="./index.css">  
+    <title>Карта профілактичних щеплень</title>
+  </head> 
+  <body class="base_elements">  
+    <form class="base_element" action=""> 
+      <h1>Карта профілактичних щеплень</h1>    
+      <div class="coder">    
+        <p>Ідентифікаційний код: <%= medcards.cart_identification_code %></p>
+        <p>Взятий на облік: <%= medcards.cart_take %></p>  
+        <p>Дата заповнення: <%= medcards.cart_date %></p>
+        <p>Прізвище ks: <%= medcards.last_name %></p>    
+        <p>Ім'я: <%= medcards.first_name %></p>  
+        <p>По-батькові: <%= medcards.middle_name %></p>   
+        <p>Стать: <%= medcards.sex %></p>    
+        <p>Дата народження: <%= medcards.Birthday %></p>    
+        <p>Місто: <%= medcards.city %></p> 
+        <p>Вулиця: <%= medcards.street %></p> 
+        <p>Email: <%= medcards.email %></p>     
+        <p>Номер телефону: <%= medcards.phone_number %></p>    
+      </div> 
+      <div class="form-choose">
+        <button class="next-card" type="submit" onclick="location.href='/main'">В меню</button>   
+        <button class="btn-choosen" type="button" onclick="history.back();">Назад</button>    
+      </div>  
+    </form> 
+  </body> 
+
+  </html>

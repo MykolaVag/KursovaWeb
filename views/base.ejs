@@ -1,0 +1,164 @@
+<!DOCTYPE html>                                          
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+    <link rel="stylesheet" type="text/css" href="./index.css">   
+    <title>База документів</title>
+  </head>   
+  <body class="base_list">  
+    <form class="base_listelement">                               
+      <h1>База документів</h1>            
+      <div class="accordion">            
+        <% for (let i = 0; i < medcards.length; i++) { %>
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link" id="medcard-button" data-toggle="collapse" data-target="#medcard<%= i + 1 %>" aria-expanded="<%= i === 0 ? 'true' : 'false' %>" aria-controls="medcard<%= i + 1 %>">
+                  <%= medcards[i].last_name %>
+                </button>
+              </h5>               
+            </div>        
+            <div id="medcard<%= i + 1 %>" class="collapse <%= i === 0 ? 'show' : '' %>" aria-labelledby="heading<%= i + 1 %>" data-parent="#accordion">
+              <div class="card-body" id="medcardi">
+                <% if(medcards[i].patient_code) { %>
+                  <p id="patient_code">Код пацієнта: <%= medcards[i].patient_code %></p>
+                <% } %>
+                <% if(medcards[i].date) { %>
+                  <p id="date" class="myElement">Дата заповнення карти: <%= medcards[i].date %></p> 
+                <% } %>
+                <% if(medcards[i].last_name) { %>
+                  <p id="last_name">Прізвище: <%= medcards[i].last_name %></p>
+                <% } %>
+                <% if(medcards[i].first_name) { %>
+                  <p id="last_name">Прізвище: <%= medcards[i].first_name %></p>
+                <% } %> 
+                <% if(medcards[i].middle_name) { %>
+                  <p id="middle_name">По-батькові: <%= medcards[i].middle_name %></p>    
+                <% } %>
+                <% if(medcards[i].Birthday) { %>
+                  <p id="birthday">Дата народження: <%= medcards[i].Birthday %></p>  
+                <% } %>
+                <% if(medcards[i].city) { %>
+                  <p id="city" class="myElement">Місто: <%= medcards[i].city %></p>
+                <% } %> 
+                <% if(medcards[i].Birthday) { %>
+                  <p id="birthday">Дата народження: <%= medcards[i].Birthday %></p>  
+                <% } %>
+                <% if(medcards[i].sex) { %>
+                  <p id="sex" class="myElement">Стать: <%= medcards[i].sex %></p> 
+                <% } %>
+                <% if(medcards[i].city) { %>
+                  <p id="city" class="myElement">Місто: <%= medcards[i].city %></p>
+               <% } %>   
+               <% if(medcards[i].street) { %>
+                <p id="street" class="myElement">Вулиця: <%= medcards[i].street %></p>
+               <% } %>
+               <% if(medcards[i].work) { %>
+                <p id="work" class="myElement">Місце роботи: <%= medcards[i].work %></p>
+               <% } %>
+               <% if(medcards[i].email) { %>
+                <p id="email" class="myElement">Email: <%= medcards[i].email %></p>
+               <% } %>
+               <% if(medcards[i].phone) { %>
+                <p id="phone" class="myElement">Номер телефону: <% medcards[i].phone %></p> 
+               <% } %>
+               <% if(medcards[i].phone) { %>
+                  <p id="city" class="myElement">Номер телефону: <%= medcards[i].city %></p>
+               <% } %>
+               <% if(medcards[i].city) { %>
+                <p id="city" class="myElement">Місто: <%= medcards[i].city %></p>
+                <% } %>        
+                <% if(medcards[i].select_desp) { %>
+                <p id="select-sex" class="myElement">Диспансерна група: <%= medcards[i].select-sex %></p>
+                <% } %>
+                <% if(medcards[i].contingent) { %>
+                  <p id="contingent" class="myElement">Контингент: <%= medcards[i].contingent %></p>
+                <% } %>
+                <% if(medcards[i].certification) { %>
+                  <p id="certification" class="myElement">Диспансерна група: <%= medcards[i].contingent %></p>
+                <% } %>
+                <% if(medcards[i].taken) { %> 
+                  <p id="taken" class="myElement">Взятий на облік: <%= medcards[i].taken %></p>
+                <% } %>
+                <% if(medcards[i].about) { %>
+                  <p id="about" class="myElement">З приводу: <%= medcards[i].about %></p>
+                <% } %>
+                <% if(medcards[i].removed) { %>
+                  <p id="removed" class="myElement">Знятий з обліку: <%= medcards[i].removed %></p>
+                <% } %>  
+                <% if(medcards[i].city) { %>
+                  <p id="reason" class="myElement">Причина: <%= medcards[i].reason %></p>
+                <% } %>
+                <% if(medcards[i].all_number) { %> 
+                  <p id="all_number" class="myElement">Загальна кількість сім'ї: <%= medcards[i].all_number %></p>
+                <% } %>
+                <% if(medcards[i].car_series) { %> 
+                  <p id="car_series" class="myElement">Cерія: <%= medcards[i].car_series %></p>
+                <% } %>
+                <% if(medcards[i].car_number) { %> 
+                  <p id="car_number" class="myElement">№: <%= medcards[i].car_number %></p>
+                <% } %>
+                <% if(medcards[i].car_rezus) { %> 
+                  <p id="car_rezus" class="myElement">Резус фактор: <%= medcards[i].car_rezus %></p>
+                <% } %>
+                <% if(medcards[i].car_group) { %> 
+                  <p id="car_group" class="myElement">Група крові: <%= medcards[i].car_group %></p>
+                <% } %>
+                <% if(medcards[i].car_valid) { %> 
+                  <p id="car_valid" class="myElement">Дійсна до: <%= medcards[i].car_valid %></p>
+                <% } %>
+                <% if(medcards[i].car_categories) { %> 
+                  <p id="car_categories" class="myElement">Категорії транспортних засобів: <%= medcards[i].car_categories %></p>
+                <% } %>
+                <% if(medcards[i].car_chairman) { %> 
+                  <p id="car_chairman" class="myElement">Голова комісії: <%= medcards[i].car_chairman %></p>
+                <% } %>
+                <% if(medcards[i].cart_identification_code) { %> 
+                  <p id="cart_identification_code" class="myElement">Ідентифікаційний код: <%= medcards[i].cart_identification_code %></p>
+                <% } %>
+                <% if(medcards[i].cart_take) { %> 
+                  <p id="сart_take" class="myElement">Взятий на облік: <%= medcards[i].cart_take %></p>
+                <% } %>
+                <% if(medcards[i].cart_date) { %> 
+                  <p id="cart_date" class="myElement">Дата заповнення: <%= medcards[i].cart_date %></p>
+                <% } %>
+                <% if(medcards[i].work_surname) { %> 
+                  <p id="work_surname" class="myElement">Прізвище лікаря: <%= medcards[i].work_surname %></p>
+                <% } %>
+                <% if(medcards[i].work_number_cart) { %> 
+                  <p id="work_number_cart" class="myElement">№ медичної карти: <%= medcards[i].work_number_cart %></p>
+                <% } %>
+                <% if(medcards[i].work_top) { %> 
+                  <p id="work_top" class="myElement">Місце роботи: <%= medcards[i].work_top %></p>
+                <% } %>
+                <% if(medcards[i].work_issued) { %> 
+                  <p id="work_issued" class="myElement">Виданий: <%= medcards[i].work_issued %></p>
+                <% } %> 
+                <% if(medcards[i].work_reason) { %> 
+                  <p id="work_reason" class="myElement">Причина непрацездатності: <%= medcards[i].work_reason %></p>
+                <% } %> 
+            </div>
+          </div>
+        <% } %> 
+      </div>   
+      <div class="form-choose"> 
+        <button class="btn-choosen" type="button" onclick="history.back();">В меню</button>    
+      </div>  
+    </form>
+    <script src="/public/base.js"></script>    
+   </body>      
+ </html> 
+
+
+
+
+
+
+
+
+
+
+
+
+   

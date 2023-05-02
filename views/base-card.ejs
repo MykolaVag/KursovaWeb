@@ -1,0 +1,40 @@
+<!DOCTYPE html>                       
+<html>
+  <head> 
+    <link rel="stylesheet" type="text/css" href="./index.css">  
+    <title>Медична карта</title>
+  </head> 
+  <body class="base_elements">  
+    <form class="base_element" action=""> 
+      <h1>Медична карта</h1>    
+      <div class="coder">    
+        <p>Код пацієнта: <%= medcards.patient_code %></p>
+        <p>Дата заповнення карти: <%= medcards.data %></p>  
+        <p>Прізвище: <%= medcards.last_name %></p>
+        <p>Ім'я: <%= medcards.first_name %></p> 
+        <p>По-батькові: <%= medcards.middle_name %></p>   
+        <p>Стать: <%= medcards.sex %></p>  
+        <p>Дата народження: <%= medcards.Birthday %></p>    
+        <p>Місто: <%= medcards.city %></p> 
+        <p>Вулиця: <%= medcards.street %></p>
+        <p>Місце роботи: <%= medcards.work %></p>   
+          
+        <p>Email: <%= medcards.email %></p>  
+        <p>Номер телефону: <%= medcards.phone_number %></p>   
+        <p>Диспансерна група: <% if (medcards.contingent === "1") { %>Так<% } else { %>Ні<% } %></p>  
+        <p>Контингент: <%= medcards.contingent %></p> 
+        <p>Номер пільгового посвідчення: <%= medcards.certification %></p> 
+        <p>Взятий на облік: <%= medcards.taken %></p> 
+        <p>З приводу: <%= medcards.about %></p> 
+        <p>Знятий з обліку: <%= medcards.removed %></p> 
+        <p>Причина: <%= medcards.reason %></p> 
+
+      </div> 
+      <div class="form-choose">
+        <button class="next-card" type="submit" onclick="location.href='/main'">В меню</button>   
+        <button class="btn-choosen" type="button" onclick="history.back();">Назад</button>    
+      </div> 
+    </form> 
+  </body> 
+
+  </html>

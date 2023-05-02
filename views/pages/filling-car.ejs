@@ -1,0 +1,39 @@
+<!DOCTYPE html>                       
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./index.css">  
+    <title>Заповніть...</title>
+  </head> 
+  <body class="filling"> 
+    <form action="/base-car" method="POST"> 
+    <h1>Медична довідка щодо керування транспортним засобом</h1> 
+      <div class="code">  
+        <input type="text" id="username" name="car_series" placeholder="Серія" required>
+        <input type="text" id="username" name="car_number" placeholder="№" required>  
+      </div>      
+      <div class="first">
+        <input type="text" id="last_name" name="last_name" placeholder="Прізвище" required>
+        <input type="text" id="first_name" name="first_name" placeholder="Ім'я" required> 
+        <input type="text" id="middle_name" name="middle_name" placeholder="По-батькові" required>    
+        <input type="text" class="date_name" id="datepicker" placeholder="Дата народження" name="Birthday" required>  
+      </div> 
+      <div class="space">
+        <input type="text" id="city" placeholder="Місто" name="city" required>  
+        <input type="text" id="car_group" placeholder="Група крові" name="car_group" required>   
+        <input type="email" id="email" placeholder="Резус фактор" name="car_rezus" required>  
+        <input type="tel" id="phone" placeholder="Видана(ким,коли)" name="car_issued" required>   
+      </div>   
+      <div class="space-first"> 
+         <input type="text" id="taken" placeholder="Дійсна до" name="car_valid" required> 
+         <input type="text" id="about" placeholder="Категорії транспортних засобів" name="car_categories" required>                 
+         <input type="text" id="about" placeholder="Голова комісії" name="car_chairman" required>                             
+       </div> 
+      <div class="form-choose">
+        <button class="next-card" type="submit" >Створити</button>   
+        <button class="btn-choosen" type="button" onclick="history.back();">Назад</button>    
+      </div> 
+    </form>
+  </body> 
+</html> 
+

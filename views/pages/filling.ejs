@@ -1,0 +1,57 @@
+<!DOCTYPE html>                       
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./index.css">  
+    <title>Заповніть...</title>
+  </head> 
+  <body class="filling"> 
+    <form action="/submit" method="post"> 
+    <h1>Медична карта</h1> 
+      <div class="code">  
+        <input type="text" id="username" name="patient_code" placeholder="Код пацієнта" required>
+        <input type="text" id="username" name="date" placeholder="Дата заповнення карти" required>  
+      </div>      
+      <div class="first">
+        <input type="text" id="username" name="last_name" placeholder="Прізвище" required>
+        <input type="text" id="username" name="first_name" placeholder="Ім'я" required> 
+        <input type="text" id="username" name="middle_name" placeholder="По-батькові" required>   
+        <select class="select-sex" name="sex"> 
+          <option value="Чоловік">Чоловік</option>
+          <option value="Жінка">Жінка</option> 
+        </select>  
+        <input type="text" class="date_name" id="datepicker" placeholder="Дата народження" name="Birthday" required>  
+      </div> 
+      <div class="space">
+        <input type="text" id="city" placeholder="Місто" name="city" required> 
+        <input type="text" id="street" placeholder="Вулиця" name="street" required>
+        <input type="text" id="work" placeholder="Місце роботи" name="work" required>   
+        <input type="email" id="email" placeholder="Email" name="email" required>  
+        <input type="tel" id="phone" placeholder="Номер телефону" name="phone_number" required>   
+      </div> <div class="code"> 
+        <select class="select_disp" name="select_disp"> 
+            <option disabled="disabled">Диспансерна група</option> 
+            <option value="1">Так</option>
+            <option value="2">Ні</option> 
+          </select>    
+      </div>      
+      <div class="first">
+        <input type="text" id="contingent" name="contingent" placeholder="Контингент" required> 
+        <input type="text" id="certification" name="certification" placeholder="Номер пільгового посвідчення" required>
+       </div> 
+      <div class="space-first">
+         <input type="text" id="taken" placeholder="Взятий на облік" name="taken" required>   
+         <input type="text" id="about" placeholder="З приводу" name="about" required>               
+       </div>
+     <div class="space">
+        <input type="text" id="removed" placeholder="Знятий з обліку" name="removed" required>   
+        <input type="text" id="reason" placeholder="Причина" name="reason" required>               
+      </div> 
+      <div class="form-choose">
+        <button class="next-card" type="submit" >Створити</button>   
+        <button class="btn-choosen" type="button" onclick="history.back();">Назад</button>    
+      </div> 
+    </form>
+  </body> 
+</html> 
+

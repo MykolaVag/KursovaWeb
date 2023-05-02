@@ -1,0 +1,25 @@
+<!DOCTYPE html>                       
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./index.css">  
+    <title>Заповніть...</title>
+  </head> 
+  <body class="filling"> 
+    <form action="/base-all" method="POST">  
+    <h1>Медичний паспорт сім'ї</h1>   
+      <div class="code">   
+        <input type="text" id="username" name="all_number" placeholder="Загальна кількість членів сім'ї" required>
+        <input type="text" id="username" name="last_name" placeholder="Прізвище сім'ї" required>  
+      </div>       
+        <input type="text" id="city" placeholder="Місто" name="city" required> 
+        <input type="text" id="street" placeholder="Вулиця" name="street" required>    
+      </div> 
+      <div class="form-choose">
+        <button class="next-card" type="submit" >Створити</button>   
+        <button class="btn-choosen" type="button" onclick="history.back();">Назад</button>    
+      </div> 
+    </form>
+  </body> 
+</html> 
+

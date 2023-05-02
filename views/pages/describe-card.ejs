@@ -1,0 +1,34 @@
+<!DOCTYPE html>                        
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./index.css">  
+    <title>Заповніть...</title>  
+  </head> 
+  <body class="filling"> 
+    <form action="/succesful" method="post"> 
+      <h1>Медична карта</h1> 
+      <div class="code"> 
+        <select class="select-sex"> 
+            <option disabled="disabled">Диспансерна група</option> 
+            <option value="1">Так</option>
+            <option value="2">Ні</option> 
+          </select>    
+      </div>      
+      <div class="first">
+        <input type="text" id="contingent" name="contingent" placeholder="Контингент" required> 
+        <input type="number" id="certification" name="certification" placeholder="Номер пільгового посвідчення" required>
+       </div> 
+      <div class="space-first">
+         <input type="number" id="taken" placeholder="Взятий на облік" name="taken" required>   
+         <input type="text" id="about" placeholder="З приводу" name="about" required>               
+       </div>
+     <div class="space">
+        <input type="number" id="removed" placeholder="Знятий з обліку" name="removed" required>   
+        <input type="text" id="reason" placeholder="Причина" name="reason" required>               
+      </div>
+      <button class="next-card" type="submit" >Завершити</button> 
+      <button class="btn-choosen" type="submit" onclick="history.back();">Назад</button>             
+    </form> 
+  </body> 
+</html> 

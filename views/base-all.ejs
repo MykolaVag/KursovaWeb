@@ -1,0 +1,23 @@
+<!DOCTYPE html>                       
+<html>
+  <head> 
+    <link rel="stylesheet" type="text/css" href="./index.css">  
+    <title>Медичний паспорт</title>        
+  </head> 
+  <body class="base_elements">  
+    <form class="base_element" action=""> 
+      <h1>Медичний паспорт сім'ї</h1>    
+      <div class="coder">    
+        <p>Загальна кількість сім'ї: <%= medcards.all_number %></p>
+        <p>Прізвище сім'ї: <%= medcards.last_name %></p>  
+        <p>Місто: <%= medcards.city %></p>
+        <p>Вулиця: <%= medcards.street %></p>     
+      </div> 
+      <div class="form-choose">
+        <button class="next-card" type="submit" onclick="location.href='/main'">В меню</button>   
+        <button class="btn-choosen" type="button" onclick="history.back();">Назад</button>    
+      </div> 
+    </form> 
+  </body> 
+
+  </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>                       
+<html>
+  <head> 
+    <link rel="stylesheet" type="text/css" href="./index.css">  
+    <title>Медична довідка щодо керування транспортним засобом</title>
+  </head> 
+  <body class="base_elements">  
+    <form class="base_element" action=""> 
+      <h1>Медична довідка щодо керування транспортним засобом</h1>    
+      <div class="coder">    
+        <p>Cерія: <%= medcards.car_series %></p>
+        <p>№: <%= medcards.car_number %></p>          
+        <p>Прізвище: <%= medcards.last_name %></p>
+        <p>Ім'я: <%= medcards.first_name %></p>  
+        <p>По-батькові: <%= medcards.middle_name %></p>   
+        <p>Дата народження: <%= medcards.Birthday %></p>    
+        <p>Місто: <%= medcards.city %></p>           
+        <p>Група крові: <%= medcards.car_group %></p>
+        <p>Резус фактор: <%= medcards.car_rezus %></p>    
+        <p>Дійсна до: <%= medcards.car_valid %></p>   
+        <p>Категорії транспортних засобів: <%= medcards.car_categories %></p>   
+        <p>Голова комісії: <%= medcards.car_chairman %></p>  
+      </div> 
+      <div class="form-choose">
+        <button class="next-card" type="submit" onclick="location.href='/main'">В меню</button>   
+        <button class="btn-choosen" type="button" onclick="history.back();">Назад</button>    
+      </div> 
+    </form> 
+  </body> 
+
+  </html>

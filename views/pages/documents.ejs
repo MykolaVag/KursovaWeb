@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Створення документу</title>
+    <link rel="stylesheet" type="text/css" href="./index.css"> 
+   </head>
+  <body class="documents">
+      <div class="documents-main">
+        <h1>Список доступних документів</h1>
+        <% if (documents.length) { %>              
+          <ul>
+            <% documents.forEach(document => { %>
+          <li class="document">  
+                <label>
+                  <input type="checkbox" name="checkbox1" class="filled-in" value="<%= document.link %>" />
+                  <span class=" "><%= document.title %></span>  
+                </label> 
+          </li>  
+          <li class="document">
+            <label>
+              <input type="checkbox" name="checkbox2" class="filled-in" value="<%= document.link %>" />
+              <span class=" "><%= document.title5 %></span>  
+            </label>  
+          </li> 
+          <li class="document">
+            <label>
+              <input type="checkbox" name="checkbox3" class="filled-in" value="<%= document.link %>" />
+              <span class=" "><%= document.title14 %></span>  
+            </label>  
+          </li> 
+          <li class="document">
+            <label>
+              <input type="checkbox" name="checkbox4" class="filled-in" value="<%= document.link %>" />
+              <span class=" "><%= document.title19 %></span>  
+            </label>  
+          </li> 
+          <li class="document">
+            <label>
+              <input type="checkbox" name="checkbox5" class="filled-in" value="<%= document.link %>" />
+              <span class=" "><%= document.title11 %></span>  
+            </label>  
+          </li> 
+            <% }) %>
+        </ul> 
+        <% } else { %>
+          <p>Документи не знайдено.</p>
+        <% } %>
+        <form class="form-choose" method="GET" action="">
+            <button id="choose-button" class="btn-choose" type="submit">Вибрати</button>
+        </form>
+          <form class="form-choose" method="GET" action="/main">                            
+            <button class="btn-choosen" type="submit">Назад</button>
+        </form>
+      </div>    
+  </body>
+</html>
+
+<script src="/public/documents.js"></script>

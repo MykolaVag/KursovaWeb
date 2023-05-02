@@ -1,0 +1,39 @@
+<!DOCTYPE html>                       
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./index.css">  
+    <title>Заповніть...</title>
+  </head> 
+  <body class="filling"> 
+    <form action="/base-cart" method="POST"> 
+    <h1>Карта профілактичних щеплень</h1> 
+      <div class="code">  
+        <input type="text" id="username" name="cart_identification_code" placeholder="Ідентифікаційний код:" required>
+        <input type="text" id="username" name="cart_take" placeholder="Взятий на облік" required>  
+        <input type="text" id="username" name="cart_date" placeholder="Дата заповнення карти:" required>  
+      </div>      
+      <div class="first">
+        <input type="text" id="username" name="last_name" placeholder="Прізвище" required>
+        <input type="text" id="username" name="first_name" placeholder="Ім'я" required> 
+        <input type="text" id="username" name="middle_name" placeholder="По-батькові" required>   
+        <select class="select-sex" name="sex"> 
+          <option value="Чоловік">Чоловік</option>
+          <option value="Жінка">Жінка</option> 
+        </select>  
+        <input type="text" class="date_name" id="datepicker" placeholder="Дата народження" name="cart_Birthday" required>  
+      </div> 
+      <div class="space">
+        <input type="text" id="city" placeholder="Місто" name="city" required> 
+        <input type="text" id="street" placeholder="Вулиця" name="street" required> 
+        <input type="email" id="email" placeholder="Email" name="email" required>  
+        <input type="tel" id="phone" placeholder="Номер телефону" name="phone_number" required>   
+      </div>  
+      <div class="form-choose">
+        <button class="next-card" type="submit" >Створити</button>   
+        <button class="btn-choosen" type="button" onclick="history.back();">Назад</button>    
+      </div> 
+    </form>
+  </body> 
+</html> 
+
